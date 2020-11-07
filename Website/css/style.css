@@ -1,0 +1,257 @@
+/* Colors
+AppColor: #3498db
+B: #256C9C
+C: #16405C
+D: #38A2E8
+E: #2F87C2
+
+*/
+:root {
+  --color-dark-blue: #16405c;
+  --main-bg-color: #38a2e8;
+}
+
+/* Sichtbarkeit */
+/* .row {
+  border: 2px blue solid;
+}
+
+.col-sm {
+  border: 2px black solid;
+} */
+
+/* General */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  height: 2000px;
+}
+
+.container {
+  margin-top: 60px;
+}
+
+@media (max-width: 367px) {
+  .container {
+    margin-top: 0px;
+  }
+}
+
+.col-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-sm > p {
+  width: 80%;
+}
+/* Styling der Navbar */
+.navbar,
+.navbar-light {
+  background-color: #3498db;
+  /* position: fixed; */
+  width: 100%;
+  /* damit die navbar über dem karousell liegt */
+  z-index: 10;
+}
+
+/* navbar links */
+
+/* .navbar-light .navbar-nav .nav-link {
+  color: grey;
+} */
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:active {
+  color: white;
+}
+
+.navJumper {
+  visibility: hidden;
+  height: 0px !important;
+  position: absolute;
+  margin: -56px;
+}
+
+/* carousel */
+.carousel {
+  background-color: var(--main-bg-color);
+}
+.customCarouselContainer {
+  height: 300px;
+
+  background-color: var(--main-bg-color);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.customCarouselItem {
+  max-width: 500px;
+  margin: 0 10px;
+}
+
+#imgDescriptionFirstCarousel {
+  position: absolute;
+  top: 40px;
+  z-index: 10;
+  padding-top: 20px;
+  color: #fff;
+  text-align: left;
+}
+
+#imgDescriptionFirstCarousel h5 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: -1px 1px 2px hsl(0, 0%, 52%);
+}
+
+@media (max-width: 785px) {
+  #imgDescriptionFirstCarousel h5 {
+    font-size: 2.5rem;
+  }
+  #imgDescriptionFirstCarousel {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  #imgDescriptionFirstCarousel h5 {
+    font-size: 1.7rem;
+  }
+  #imgDescriptionFirstCarousel {
+    text-align: center;
+  }
+}
+
+#meditationsImage {
+  object-fit: cover;
+  max-height: 500px;
+}
+
+#wissensImage {
+  width: 100%;
+  object-fit: cover;
+  max-height: 500px;
+  vertical-align: baseline;
+}
+
+section {
+  padding: 70px 0;
+  text-align: center;
+}
+
+#downloadSection img {
+  height: 100px;
+  margin-top: 20px;
+}
+
+@media (max-width: 575px) {
+  #downloadSection img {
+    height: 80px;
+    margin-top: 20px;
+  }
+}
+
+#indBrand {
+  color: white;
+}
+
+/* carousel */
+#carouselExampleIndicators {
+  padding-top: 56px;
+}
+
+.indCarousel {
+  z-index: 5;
+}
+.carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+/* AppColor: #3498db
+B: #256C9C
+C: #16405C
+D: #38A2E8
+E: #2F87C2 */
+
+/* Sections */
+#downloadSection {
+  background-color: #38a2e8;
+  color: white;
+}
+
+#uebungenSection {
+  background-color: #16405c;
+  color: white;
+}
+
+#wissensSection {
+  background-color: #2f87c2;
+  color: white;
+}
+
+#aktivitaetenSection {
+  background-color: #256c9c;
+  color: white;
+}
+
+#profilSection {
+  background-color: #2f87c2;
+  color: white;
+}
+
+/* Image Properties */
+
+.rightPictureSmallScreens {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  .rightPictureSmallScreens {
+    display: inline-block;
+  }
+
+  .rightPictureBigScreens {
+    display: none;
+  }
+}
+
+.screenshots {
+  display: block;
+  width: 100%;
+  height: 600px;
+  min-width: 300px;
+  object-fit: contain;
+}
+footer {
+  padding: 70px 30px;
+  background-color: white;
+}
+
+footer h1 {
+  margin-bottom: 30px;
+}
+
+footer p {
+  text-align: justify;
+  max-width: 50%;
+}
+
+@media (max-width: 575px) {
+  footer p {
+    max-width: 100%;
+  }
+}
