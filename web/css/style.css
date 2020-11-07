@@ -150,10 +150,12 @@ section {
   padding: 70px 0;
   text-align: center;
 }
+#downloadSection {
+  padding-top: 140px;
+}
 
 #downloadSection img {
-  height: 100px;
-  margin-top: 20px;
+  height: 85px;
 }
 
 @media (max-width: 575px) {
@@ -168,9 +170,6 @@ section {
 }
 
 /* carousel */
-#carouselExampleIndicators {
-  padding-top: 56px;
-}
 
 .indCarousel {
   z-index: 5;
